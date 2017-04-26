@@ -2,11 +2,11 @@
 
 This is a modified version of [Bedrock](https://roots.io/bedrock/).  It maintains the same directory structure, but no longer requires that WordPress and all plugins be installed and maintained through Composer.  While keeping everything in Composer is great for projects that a developer has total control over and is able to maintain indefintiely, it is not always possible for client work.
 
-Basically, if this is a site that you're willing to maintain using Composer, **do not use this**.  Real Bedrock is a much better choice.
+Basically, if you are willing to funnel all WordPress and plugin updates through Composer, **do not use this**.  Real Bedrock is a great choice.
 
 The main changes from Bedrock are:
 
-* **Automatic WordPress updates and file modifications (ie, plugin updates/installs) are no longer disabled in the admin interface.** - Since WordPress is obsessive about maintaining backwards compatibility, allowing the client to perform those updates is usually pretty harmless.  Plugin updates are more likely to cause issues, but the alternative is often leaving them completely un-updated for years at a time.  Random plugins installed by the client are a security and stability risk, but they also expect that to be an option.
+* **Automatic WordPress updates and file modifications (ie, plugin updates/installs) are no longer disabled in the admin interface.** Since WordPress is obsessive about maintaining backwards compatibility, allowing the client to perform those updates is usually pretty harmless.  Plugin updates are more likely to cause issues, but the alternative is often leaving them completely un-updated for years at a time.  Random plugins installed by the client are a security and stability risk, but they also expect that to be an option.
 * **Plugins that ARE managed by Composer are assumed to be required for the site to function, and are installed in the mu-plugins directory**
 * **"Optional" plugins are defined in a configuation file, and installed (but not activated) using wp-cli when the build script is run**
 
@@ -22,7 +22,7 @@ The main changes from Bedrock are:
 
 * PHP >= 5.6
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* wp-cli - This assumes that the "wp" command is mapped to wp-cli
+* wp-cli - This assumes that the `wp` command is mapped to wp-cli
 
 ## Installation
 
