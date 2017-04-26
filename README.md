@@ -1,38 +1,34 @@
-# [Bedrock](https://roots.io/bedrock/)
-[![Packagist](https://img.shields.io/packagist/v/roots/bedrock.svg?style=flat-square)](https://packagist.org/packages/roots/bedrock)
-[![Build Status](https://img.shields.io/travis/roots/bedrock.svg?style=flat-square)](https://travis-ci.org/roots/bedrock)
+# BAC WordPress Project Framework
 
-Bedrock is a modern WordPress stack that helps you get started with the best development tools and project structure.
+This is a modified version of [Bedrock](https://roots.io/bedrock/).  It maintains the same directory structure, but no longer requires that WordPress and all plugins be installed and maintained through Composer.  While keeping everything in Composer is great for projects that a developer has total control over and is able to maintain indefintiely, it is not always possible for client work.
 
-Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
+Basically, if this is a site that you're willing to maintain using Composer, **do not use this**.  Real Bedrock is a much better choice.
 
-## Features
+The main changes from Bedrock are:
+
+* **Automatic WordPress updates and file modifications (ie, plugin updates/installs) are no longer disabled in the admin interface.** - Since WordPress is obsessive about maintaining backwards compatibility, allowing the client to perform those updates is usually pretty harmless.  Plugin updates are more likely to cause issues, but the alternative is often leaving them completely un-updated for years at a time.  Random plugins installed by the client are a security and stability risk, but they also expect that to be an option.
+* **Plugins that ARE managed by Composer are assumed to be required for the site to function, and are installed in the mu-plugins directory**
+* **"Optional" plugins are defined in a configuation file, and installed (but not activated) using wp-cli when the build script is run**
+
+## Features Inherited from Bedrock
 
 * Better folder structure
 * Dependency management with [Composer](http://getcomposer.org)
 * Easy WordPress configuration with environment specific files
 * Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
 * Autoloader for mu-plugins (use regular plugins as mu-plugins)
-* Enhanced security (separated web root and secure passwords with [wp-password-bcrypt](https://github.com/roots/wp-password-bcrypt))
-
-Use [Trellis](https://github.com/roots/trellis) for additional features:
-
-* Easy development environments with [Vagrant](http://www.vagrantup.com/)
-* Easy server provisioning with [Ansible](http://www.ansible.com/) (Ubuntu 16.04, PHP 7.1, MariaDB)
-* One-command deploys
-
-See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
 
 ## Requirements
 
 * PHP >= 5.6
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* wp-cli - This assumes that the "wp" command is mapped to wp-cli
 
 ## Installation
 
 1. Create a new project in a new folder for your project:
 
-  `composer create-project roots/bedrock your-project-folder-name`
+  `git clone https://github.com/bermanco/bac-wordpress-project.git`
 
 2. Copy `.env.example` to `.env` and update environment variables:
   * `DB_NAME` - Database name
@@ -54,38 +50,23 @@ See a complete working example in the [roots-example-project.com repo](https://g
 
 3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
 
-4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
+4. Copy `project-config.json.example` to `project-config.json` and provide values for:
+  * `themeDirectoryName` - the directory name of the site's theme (**not** the full name defined in style.css)
+  * `optionalPlugins` - Provide the slugs of plugins that will be installed during the build process for the site.  They will not be automatically activated.
 
-5. Access WP admin at `http://example.com/wp/wp-admin`
+5. Run the build script, `php build-project.php`, to install WordPress, installed Composer dependencies, install optional plugins, and run the front end build processes (NPM, Bower, Gulp, etc.)
+
+6. Set your site vhost document root to `/path/to/site/web/`
+
+7. Access WP admin at `http://example.com/wp/wp-admin`
 
 ## Deploys
 
-There are two methods to deploy Bedrock sites out of the box:
+Any deployment method can be used with one requirement:
 
-* [Trellis](https://github.com/roots/trellis)
-* [bedrock-capistrano](https://github.com/roots/bedrock-capistrano)
+`php build-project.php` must be run as part of the deploy process.
 
-Any other deployment method can be used as well with one requirement:
+## Bedrock Documentation
 
-`composer install` must be run as part of the deploy process.
+Bedrock's documentation is still mostly relevant, and is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
 
-## Documentation
-
-Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
-
-## Contributing
-
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
-
-[roots-wp-salt]:https://roots.io/salts.html
-[wp-cli-dotenv]:https://github.com/aaemnnosttv/wp-cli-dotenv-command
