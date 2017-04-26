@@ -4,8 +4,227 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f07a6bc2d146ea043dcedab8770b3399",
+    "content-hash": "6893aa027fff116913d06f323a8ea623",
     "packages": [
+        {
+            "name": "altorouter/altorouter",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dannyvankooten/AltoRouter.git",
+                "reference": "09d9d946c546bae6d22a7654cdb3b825ffda54b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dannyvankooten/AltoRouter/zipball/09d9d946c546bae6d22a7654cdb3b825ffda54b4",
+                "reference": "09d9d946c546bae6d22a7654cdb3b825ffda54b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "AltoRouter.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danny van Kooten",
+                    "email": "dannyvankooten@gmail.com",
+                    "homepage": "http://dannyvankooten.com/"
+                },
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "niahoo",
+                    "homepage": "https://github.com/niahoo"
+                }
+            ],
+            "description": "A lightning fast router for PHP",
+            "homepage": "https://github.com/dannyvankooten/AltoRouter",
+            "keywords": [
+                "lightweight",
+                "router",
+                "routing"
+            ],
+            "time": "2014-04-16T09:44:40+00:00"
+        },
+        {
+            "name": "asm89/twig-cache-extension",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/twig-cache-extension.git",
+                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/twig-cache-extension/zipball/630ea7abdc3fc62ba6786c02590a1560e449cf55",
+                "reference": "630ea7abdc3fc62ba6786c02590a1560e449cf55",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "twig/twig": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "~1.0"
+            },
+            "suggest": {
+                "psr/cache-implementation": "To make use of PSR-6 cache implementation via PsrCacheAdapter."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cache fragments of templates directly within Twig.",
+            "homepage": "https://github.com/asm89/twig-cache-extension",
+            "keywords": [
+                "cache",
+                "extension",
+                "twig"
+            ],
+            "time": "2017-01-10T22:04:15+00:00"
+        },
+        {
+            "name": "bermanco/bac-timber-classes",
+            "version": "v1.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bermanco/extended-timber-classes.git",
+                "reference": "12d1a18cf43518e5a0df41122d1ac02f1a736ce7"
+            },
+            "require": {
+                "timber/timber": "~1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bermanco\\ExtendedTimberClasses\\": "src"
+                }
+            },
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Herbert",
+                    "email": "herbert@bermanco.com"
+                },
+                {
+                    "name": "Joey Nichols",
+                    "email": "nichols@bermanco.com"
+                }
+            ],
+            "description": "Enhanced and expanded classes for use with Timber",
+            "time": "2017-01-19T15:51:16+00:00"
+        },
+        {
+            "name": "bermanco/cmb2-metatabs-options",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bermanco/cmb2-metatabs-options.git",
+                "reference": "9edb1275a3273897fcd6e90991986f3854e98bd6"
+            },
+            "require": {
+                "webdevstudios/cmb2": "^2.1"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Cmb2_Metatabs_Options\\": "code/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Joey Nichols",
+                    "email": "nichols@bermanco.com"
+                }
+            ],
+            "description": "Contains a class to create a tabbed site options page for WordPress",
+            "time": "2016-06-22T18:00:33+00:00"
+        },
+        {
+            "name": "bermanco/wordpress-image-download",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bermanco/wordpress-image-download.git",
+                "reference": "851898d6d8f270a6bcebbd2dbcbbbb37cb53cb1b"
+            },
+            "require": {
+                "php-curl-class/php-curl-class": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bermanco\\WordpressImageDownload\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Chris Herbert",
+                    "email": "herbert@bermanco.com"
+                }
+            ],
+            "description": "Class to help create a WordPress attachment from a URL.",
+            "time": "2016-12-19T18:04:17+00:00"
+        },
+        {
+            "name": "bermanco/youtube-video",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bermanco/youtube-video.git",
+                "reference": "0df45b0642d4de6c912d34fb62156929cb205970"
+            },
+            "require": {
+                "madcoda/php-youtube-api": "^1.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "bermanco\\YouTubeVideo\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Chris Herbert",
+                    "email": "herbert@bermanco.com"
+                }
+            ],
+            "description": "Very simple class for getting information about a YouTube video (description, length, thumbnails, etc)",
+            "time": "2017-04-03T16:20:12+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -114,6 +333,55 @@
             "time": "2016-08-13T20:53:52+00:00"
         },
         {
+            "name": "madcoda/php-youtube-api",
+            "version": "v1.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madcoda/php-youtube-api.git",
+                "reference": "886e3aa1789cd19ad0c7add239bd2967f3b5ad4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madcoda/php-youtube-api/zipball/886e3aa1789cd19ad0c7add239bd2967f3b5ad4d",
+                "reference": "886e3aa1789cd19ad0c7add239bd2967f3b5ad4d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madcoda\\Youtube\\": "src"
+                },
+                "classmap": [
+                    "src/compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Madcoda",
+                    "email": "jason@madcoda.com"
+                }
+            ],
+            "description": "PHP wrapper for the Youtube Data API v3",
+            "keywords": [
+                "api",
+                "madcoda",
+                "video",
+                "youtube"
+            ],
+            "time": "2017-04-13T09:47:50+00:00"
+        },
+        {
             "name": "oscarotero/env",
             "version": "v1.0.2",
             "source": {
@@ -154,6 +422,298 @@
                 "env"
             ],
             "time": "2016-05-08T17:14:32+00:00"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "6.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "2e08fc596acb5f9a15ae746dfedd6673134c8cad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/2e08fc596acb5f9a15ae746dfedd6673134c8cad",
+                "reference": "2e08fc596acb5f9a15ae746dfedd6673134c8cad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class is an object-oriented wrapper of the PHP cURL extension.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "time": "2016-09-03T00:18:01+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14T01:06:16+00:00"
+        },
+        {
+            "name": "timber/timber",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timber/timber.git",
+                "reference": "dd766a0d4b80329e7b256f64be5623bc1d24ee6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timber/timber/zipball/dd766a0d4b80329e7b256f64be5623bc1d24ee6f",
+                "reference": "dd766a0d4b80329e7b256f64be5623bc1d24ee6f",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/twig-cache-extension": "~1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0|7.*",
+                "twig/twig": "^1.0|2.*",
+                "upstatement/routes": "0.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.7.16",
+                "wpackagist-plugin/advanced-custom-fields": "4.*",
+                "wpackagist-plugin/co-authors-plus": "3.*"
+            },
+            "suggest": {
+                "jarednova/markdowndocs": "dev-master for generating docs",
+                "phpdocumentor/phpdocumentor": "2.* for generating docs",
+                "satooshi/php-coveralls": "1.0.* for code coverage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Timber\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Novack",
+                    "email": "jared@upstatement.com",
+                    "homepage": "http://upstatement.com"
+                },
+                {
+                    "name": "Connor J. Burton",
+                    "email": "connorjburton@gmail.com",
+                    "homepage": "http://connorburton.com"
+                }
+            ],
+            "description": "Plugin to write WordPress themes w Object-Oriented Code and the Twig Template Engine",
+            "homepage": "http://timber.upstatement.com",
+            "keywords": [
+                "templating",
+                "themes",
+                "timber",
+                "twig"
+            ],
+            "time": "2017-04-25T20:41:47+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "85e8372c451510165c04bf781295f9d922fa524b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/85e8372c451510165c04bf781295f9d922fa524b",
+                "reference": "85e8372c451510165c04bf781295f9d922fa524b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~3.3@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2017-04-21T00:13:02+00:00"
+        },
+        {
+            "name": "upstatement/routes",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Upstatement/routes.git",
+                "reference": "fae7d46f56e8b5775f072774941a5f0a25cb86f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Upstatement/routes/zipball/fae7d46f56e8b5775f072774941a5f0a25cb86f3",
+                "reference": "fae7d46f56e8b5775f072774941a5f0a25cb86f3",
+                "shasum": ""
+            },
+            "require": {
+                "altorouter/altorouter": "1.1.0",
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master",
+                "wp-cli/wp-cli": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Routes": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jared Novack",
+                    "email": "jared@upstatement.com",
+                    "homepage": "http://upstatement.com"
+                }
+            ],
+            "description": "Manage rewrites and routes in WordPress with this dead-simple plugin",
+            "homepage": "http://routes.upstatement.com",
+            "keywords": [
+                "redirects",
+                "rewrite",
+                "routes",
+                "routing"
+            ],
+            "time": "2016-07-06T12:53:24+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -204,6 +764,148 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "webdevstudios/cmb2",
+            "version": "v2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CMB2/CMB2.git",
+                "reference": "badecc7f908781ac14b879c74526f9d055f4a41e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CMB2/CMB2/zipball/badecc7f908781ac14b879c74526f9d055f4a41e",
+                "reference": "badecc7f908781ac14b879c74526f9d055f4a41e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com",
+                    "homepage": "https://github.com/WebDevStudios",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CMB2 is a metabox, custom fields, and forms library for WordPress that will blow your mind.",
+            "homepage": "https://github.com/WebDevStudios/CMB2",
+            "keywords": [
+                "metabox",
+                "plugin",
+                "wordpress"
+            ],
+            "time": "2017-02-27T15:05:31+00:00"
+        },
+        {
+            "name": "webdevstudios/cpt-core",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WebDevStudios/CPT_Core.git",
+                "reference": "1f856e619a20c96f093f6916b4e6fa522d851b7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevStudios/CPT_Core/zipball/1f856e619a20c96f093f6916b4e6fa522d851b7c",
+                "reference": "1f856e619a20c96f093f6916b4e6fa522d851b7c",
+                "shasum": ""
+            },
+            "suggest": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "files": [
+                    "CPT_Core.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com",
+                    "homepage": "https://github.com/WebDevStudios",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress Custom Post Type OO wrapper",
+            "homepage": "https://github.com/WebDevStudios/CPT_Core",
+            "keywords": [
+                "metabox",
+                "plugin",
+                "wordpress"
+            ],
+            "time": "2017-03-24T16:06:06+00:00"
+        },
+        {
+            "name": "webdevstudios/taxonomy_core",
+            "version": "v0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WebDevStudios/Taxonomy_Core.git",
+                "reference": "80393ecb126d24ef3940ab7fa06635fe782701d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevStudios/Taxonomy_Core/zipball/80393ecb126d24ef3940ab7fa06635fe782701d8",
+                "reference": "80393ecb126d24ef3940ab7fa06635fe782701d8",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Taxonomy_Core.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevStudios",
+                    "email": "contact@webdevstudios.com"
+                }
+            ],
+            "description": "A tool to make custom taxonomy registration just a bit simpler. Automatically registers taxonomy labels, and provides helpful methods.",
+            "time": "2016-02-27T20:21:38+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/posts-to-posts",
+            "version": "1.6.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/posts-to-posts/",
+                "reference": "tags/1.6.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/posts-to-posts.1.6.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/posts-to-posts/"
         }
     ],
     "packages-dev": [],

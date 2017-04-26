@@ -23,13 +23,38 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/bermanco/extended-timber-classes.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/bermanco/cmb2-metatabs-options.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/bermanco/youtube-video.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/bermanco/wordpress-image-download.git"
     }
   ],
   "require": {
     "php": ">=5.6",
     "composer/installers": "~1.2.0",
     "vlucas/phpdotenv": "^2.0.1",
-    "oscarotero/env": "^1.0"
+    "oscarotero/env": "^1.0",
+    "timber/timber": "^1.3",
+    "bermanco/bac-timber-classes": "~1.0",
+    "bermanco/cmb2-metatabs-options": "~2.0",
+    "bermanco/youtube-video": "^2.1",
+    "bermanco/wordpress-image-download": "~2.0",
+    "wpackagist-plugin/posts-to-posts": "^1.6",
+    "webdevstudios/cmb2": "^2.2",
+    "webdevstudios/cpt-core": "^1.0",
+    "webdevstudios/taxonomy_core": "^0.2.4"
   },
   "extra": {
     "installer-paths": {
