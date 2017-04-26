@@ -46,7 +46,6 @@
     "composer/installers": "~1.2.0",
     "vlucas/phpdotenv": "^2.0.1",
     "oscarotero/env": "^1.0",
-    "timber/timber": "^1.3",
     "bermanco/bac-timber-classes": "~1.0",
     "bermanco/cmb2-metatabs-options": "~2.0",
     "bermanco/youtube-video": "^2.1",

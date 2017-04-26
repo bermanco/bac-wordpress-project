@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6893aa027fff116913d06f323a8ea623",
+    "content-hash": "7ab5e84e9dd792b1b310910bdfb166d2",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -113,14 +113,14 @@
         },
         {
             "name": "bermanco/bac-timber-classes",
-            "version": "v1.0.14",
+            "version": "v1.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bermanco/extended-timber-classes.git",
-                "reference": "12d1a18cf43518e5a0df41122d1ac02f1a736ce7"
+                "reference": "94009bf2bbe7f4b1e63531cef6238e52f678a442"
             },
             "require": {
-                "timber/timber": "~1"
+                "timber/timber": "1.2.4"
             },
             "type": "library",
             "autoload": {
@@ -142,7 +142,7 @@
                 }
             ],
             "description": "Enhanced and expanded classes for use with Timber",
-            "time": "2017-01-19T15:51:16+00:00"
+            "time": "2017-04-18T21:04:10+00:00"
         },
         {
             "name": "bermanco/cmb2-metatabs-options",
@@ -480,94 +480,33 @@
             "time": "2016-09-03T00:18:01+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
-                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Mbstring extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "mbstring",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2016-11-14T01:06:16+00:00"
-        },
-        {
             "name": "timber/timber",
-            "version": "1.3.0",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "dd766a0d4b80329e7b256f64be5623bc1d24ee6f"
+                "reference": "c3a30b077fde4b0017fcd6b9098b94d068ac95f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/dd766a0d4b80329e7b256f64be5623bc1d24ee6f",
-                "reference": "dd766a0d4b80329e7b256f64be5623bc1d24ee6f",
+                "url": "https://api.github.com/repos/timber/timber/zipball/c3a30b077fde4b0017fcd6b9098b94d068ac95f8",
+                "reference": "c3a30b077fde4b0017fcd6b9098b94d068ac95f8",
                 "shasum": ""
             },
             "require": {
                 "asm89/twig-cache-extension": "~1.0",
                 "composer/installers": "~1.0",
-                "php": ">=5.3.0|7.*",
-                "twig/twig": "^1.0|2.*",
+                "php": ">=5.3.0",
+                "twig/twig": "^1.0",
                 "upstatement/routes": "0.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.16",
+                "jarednova/markdowndocs": "dev-master",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phpunit/phpunit": "5.*",
+                "satooshi/php-coveralls": "1.0.*",
                 "wpackagist-plugin/advanced-custom-fields": "4.*",
                 "wpackagist-plugin/co-authors-plus": "3.*"
-            },
-            "suggest": {
-                "jarednova/markdowndocs": "dev-master for generating docs",
-                "phpdocumentor/phpdocumentor": "2.* for generating docs",
-                "satooshi/php-coveralls": "1.0.* for code coverage"
             },
             "type": "library",
             "autoload": {
@@ -599,25 +538,24 @@
                 "timber",
                 "twig"
             ],
-            "time": "2017-04-25T20:41:47+00:00"
+            "time": "2017-02-22T19:54:49+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.3.2",
+            "version": "v1.33.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "85e8372c451510165c04bf781295f9d922fa524b"
+                "reference": "dd6ca96227917e1e85b41c7c3cc6507b411e0927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/85e8372c451510165c04bf781295f9d922fa524b",
-                "reference": "85e8372c451510165c04bf781295f9d922fa524b",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/dd6ca96227917e1e85b41c7c3cc6507b411e0927",
+                "reference": "dd6ca96227917e1e85b41c7c3cc6507b411e0927",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0",
-                "symfony/polyfill-mbstring": "~1.0"
+                "php": ">=5.2.7"
             },
             "require-dev": {
                 "psr/container": "^1.0",
@@ -627,7 +565,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "1.33-dev"
                 }
             },
             "autoload": {
@@ -662,7 +600,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-04-21T00:13:02+00:00"
+            "time": "2017-04-20T17:39:48+00:00"
         },
         {
             "name": "upstatement/routes",
