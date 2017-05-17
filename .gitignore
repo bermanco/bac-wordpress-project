@@ -18,3 +18,9 @@ web/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+# Deploy
+deploy-to-*.php
+
+# Etc
+.DS_Store
