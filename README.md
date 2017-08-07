@@ -54,6 +54,10 @@ The main changes from Bedrock are:
   * `themeDirectoryName` - the directory name of the site's theme (**not** the full name defined in style.css)
   * `optionalPlugins` - Provide the slugs of plugins that will be installed during the build process for the site.  They will not be automatically activated.
 
+5. Run `wp core download` to download the WordPress core files.
+
+6. Install WordPress with the following command, replacing the placeholders with real values: `wp core install --url="DEV_URL" --title="SITE TITLE" --admin_user="ADMIN_USERNAME" --admin_password="ADMIN_PASSWORD" --admin_email="ADMIN_EMAIL"`
+
 5. Run the build script, `php build-project.php`, to install WordPress, installed Composer dependencies, install optional plugins, and run the front end build processes (NPM, Bower, Gulp, etc.)
 
 6. Set your site vhost document root to `/path/to/site/web/`
