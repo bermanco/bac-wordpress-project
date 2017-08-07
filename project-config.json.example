@@ -1,7 +1,4 @@
 {
 	"themeDirectoryName": "THEME_DIRECTORY",
-	"optionalPlugins": [
-		"WORDPRESS_PLUGIN_SLUG",
-		"WORDPRESS_PLUGIN_SLUG"
-	]
+	"optionalPlugins": []
 }
