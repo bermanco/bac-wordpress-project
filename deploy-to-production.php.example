@@ -127,7 +127,7 @@ echo shell_exec("php build-project.php");
 
 echo '** Syncing changes **' . "\r\n";
 echo shell_exec("ssh -t $ssh_user@$ssh_host '$change_ownership_to_user'");
-echo shell_exec("rsync -avz $excluded_files_string $local_site_directory $ssh_user@$ssh_host:'$remote_directory'");
+echo shell_exec("rsync -avz --no-p $excluded_files_string $local_site_directory $ssh_user@$ssh_host:'$remote_directory'");
 echo shell_exec("ssh -t $ssh_user@$ssh_host '$change_ownership_to_apache'");
 echo 'Complete';
 
