@@ -14,7 +14,7 @@ $apache_group = 'apache'; // ex: 'apache' or 'www-data'
 
 // Get CLI arguments
 
-$args = getopt('', ['wordpress::', 'plugins::']);
+$args = getopt('', ['wordpress::', 'plugins::', 'uploads::']);
 
 if (isset($args['wordpress'])){
 	$include_wordpress = true;
@@ -28,6 +28,13 @@ if (isset($args['plugins'])){
 }
 else {
 	$include_plugins = false;
+}
+
+if (isset($args['uploads'])){
+	$include_uploads = true;
+}
+else {
+	$include_uploads = false;
 }
 
 // Excludes
@@ -96,6 +103,11 @@ if (!$include_plugins){
 // If Wordpress core is not included (excluding '--wordpress' CLI arg)
 if (!$include_wordpress){
 	$excluded_files[] = 'web/wp';
+}
+
+// If uploads directory is not included (excluding '--uploads' CLI arg)
+if (!$include_uploads){
+	$excluded_files[] = 'web/app/uploads';
 }
 
 ////////////////////////
