@@ -62,7 +62,6 @@ $excluded_files = [
 	'LICENSE.md',
 	'CONTRIBUTING.md',
 	'CHANGELOG.md',
-	'web/app/uploads',
 	"$theme_directory/assets/js",
 	"$theme_directory/assets/scss",
 	"$theme_directory/gulpfile.babel.js",
