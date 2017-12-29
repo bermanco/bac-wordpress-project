@@ -5,7 +5,7 @@
 $remote_directory = '';
 $ssh_user = ''; // remote ssh user
 $ssh_host = ''; // remote hostname or alias
-$theme_directory = ''; // './web/app/themes/theme_dir'
+$theme_directory = ''; // 'web/app/themes/theme_dir'
 
 $apache_user = 'apache'; // ex: 'apache' or 'www-data'
 $apache_group = 'apache'; // ex: 'apache' or 'www-data'
@@ -62,6 +62,7 @@ $excluded_files = [
 	'LICENSE.md',
 	'CONTRIBUTING.md',
 	'CHANGELOG.md',
+	'node_modules',
 	"$theme_directory/assets/js",
 	"$theme_directory/assets/scss",
 	"$theme_directory/gulpfile.babel.js",
