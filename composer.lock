@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4aa5d617d216b293eeb5a713d07aa5a9",
-    "content-hash": "a77a2c6590835e9d1d83a101a523fcbf",
+    "hash": "161ccf992347ef14c1fa19b6ad2ccb7a",
+    "content-hash": "da42a6559dd7edcd04ad5162234cf821",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -758,16 +758,16 @@
         },
         {
             "name": "webdevstudios/cmb2",
-            "version": "v2.2.5",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CMB2/CMB2.git",
-                "reference": "1d580cceb3bbcc435192878769a7bde9d0be83ce"
+                "reference": "a1778c2ffccf2fdd11c9d2006eaa72192bdce9e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CMB2/CMB2/zipball/1d580cceb3bbcc435192878769a7bde9d0be83ce",
-                "reference": "1d580cceb3bbcc435192878769a7bde9d0be83ce",
+                "url": "https://api.github.com/repos/CMB2/CMB2/zipball/a1778c2ffccf2fdd11c9d2006eaa72192bdce9e9",
+                "reference": "a1778c2ffccf2fdd11c9d2006eaa72192bdce9e9",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2017-08-07 16:26:35"
+            "time": "2017-12-20 14:18:52"
         },
         {
             "name": "webdevstudios/cpt-core",
