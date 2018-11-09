@@ -75,6 +75,10 @@ define('NONCE_SALT', env('NONCE_SALT'));
 // define('DISALLOW_FILE_EDIT', true);
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 
+if (!defined('FS_METHOD') && getenv('FS_METHOD')){
+	define('FS_METHOD', getenv('FS_METHOD'));
+}
+
 /**
  * Bootstrap WordPress
  */
