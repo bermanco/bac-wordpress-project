@@ -46,7 +46,7 @@
     "bermanco/youtube-video": "^2.1",
     "bermanco/wordpress-image-download": "~2.0",
     "wpackagist-plugin/posts-to-posts": "^1.6",
-    "webdevstudios/cmb2": "2.3.0",
+    "cmb2/cmb2": "2.5.1",
     "webdevstudios/cpt-core": "^1.0",
     "webdevstudios/taxonomy_core": "^0.2.4"
   },
