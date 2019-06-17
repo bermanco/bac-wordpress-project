@@ -107,7 +107,8 @@ if (!$include_wordpress){
 
 // If uploads directory is not included (excluding '--uploads' CLI arg)
 if (!$include_uploads){
-	$excluded_files[] = 'web/app/uploads';
+	$uploads_dir = shell_exec("wp eval \"echo wp_upload_dir()['basedir'];\"");
+	$excluded_files[] = $uploads_dir;
 }
 
 ////////////////////////
