@@ -57,11 +57,6 @@ $excluded_files = [
 	'keys',
 	'phpunit.xml.dist',
 	'ruleset.xml',
-	'readme.txt',
-	'README.md',
-	'LICENSE.md',
-	'CONTRIBUTING.md',
-	'CHANGELOG.md',
 	'node_modules',
 	"$theme_directory/assets/js",
 	"$theme_directory/assets/scss",
@@ -83,15 +78,15 @@ $excluded_files = [
 	"web/app/plugins/timber/cache",
 
 	// W3 Total Cache junk
-	'web/app/advanced-cache.php',
 	'web/app/cache',
-	'web/app/object-cache.php',
-	'web/app/db.php',
-	'web/app/w3tc-config',
-	'web/app/plugins/w3tc-wp-loader.php',
+	'advanced-cache.php',
+	'db.php',
+	'object-cache.php',
+	'w3tc-config',
+	'w3tc-wp-loader.php',
 
 	// WP Super Cache Junk
-	'web/app/wp-cache-config.php',
+	'wp-cache-config.php',
 
 ];
 
