@@ -102,7 +102,8 @@ if (!$include_plugins){
 
 // If Wordpress core is not included (excluding '--wordpress' CLI arg)
 if (!$include_wordpress){
-	$excluded_files[] = 'web/wp';
+	$wp_install_dir = shell_exec("wp eval 'echo ABSPATH'");
+	$excluded_files[] = $wp_install_dir;
 }
 
 // If uploads directory is not included (excluding '--uploads' CLI arg)
