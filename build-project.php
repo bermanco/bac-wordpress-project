@@ -26,8 +26,3 @@ foreach ($install_commands as $install_command){
 
 // Activate Theme
 echo shell_exec("wp theme activate " . $config['themeDirectoryName']);
-
-// Install suggested plugins (these are not activated by default and the specific versions are not tracked in the repository)
-foreach ($config['optionalPlugins'] as $plugin){
-	echo shell_exec("wp plugin install $plugin");
-}

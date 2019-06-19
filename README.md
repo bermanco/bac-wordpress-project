@@ -8,7 +8,6 @@ The main changes from Bedrock are:
 
 * **Automatic WordPress updates and file modifications (ie, plugin updates/installs) are no longer disabled in the admin interface.** Since WordPress is obsessive about maintaining backwards compatibility, allowing the client to perform those updates is usually pretty harmless.  Plugin updates are more likely to cause issues, but the alternative is often leaving them completely un-updated for years at a time.  Random plugins installed by the client are a security and stability risk, but they also expect that to be an option.
 * **Plugins that ARE managed by Composer are assumed to be required for the site to function, and are installed in the mu-plugins directory**
-* **"Optional" plugins are defined in a configuation file, and installed (but not activated) using wp-cli when the build script is run**
 
 ## Features Inherited from Bedrock
 
@@ -52,13 +51,12 @@ The main changes from Bedrock are:
 
 4. Copy `project-config.json.example` to `project-config.json` and provide values for:
   * `themeDirectoryName` - the directory name of the site's theme (**not** the full name defined in style.css)
-  * `optionalPlugins` - Provide the slugs of plugins that will be installed during the build process for the site.  They will not be automatically activated.
 
 5. Run `wp core download` to download the WordPress core files.
 
 6. Install WordPress with the following command, replacing the placeholders with real values: `wp core install --url="DEV_URL" --title="SITE TITLE" --admin_user="ADMIN_USERNAME" --admin_password="ADMIN_PASSWORD" --admin_email="ADMIN_EMAIL"`
 
-5. Run the build script, `php build-project.php`, to install WordPress, installed Composer dependencies, install optional plugins, and run the front end build processes (NPM, Bower, Gulp, etc.)
+5. Run the build script, `php build-project.php`, to install WordPress, installed Composer dependencies, and run the front end build processes (NPM, Bower, Gulp, etc.)
 
 6. Set your site vhost document root to `/path/to/site/web/`
 
