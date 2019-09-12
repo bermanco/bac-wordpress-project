@@ -92,19 +92,19 @@ $excluded_files = [
 
 // If plugins are not included (excluding '--plugins' CLI arg)
 if (!$include_plugins){
-	$wp_plugins_dir = shell_exec("wp eval 'echo WP_PLUGIN_DIR;'");
+	$wp_plugins_dir = 'web/app/plugins';
 	$excluded_files[] = $wp_plugins_dir;
 }
 
 // If Wordpress core is not included (excluding '--wordpress' CLI arg)
 if (!$include_wordpress){
-	$wp_install_dir = shell_exec("wp eval 'echo ABSPATH;'");
+	$wp_install_dir = 'web/wp';
 	$excluded_files[] = $wp_install_dir;
 }
 
 // If uploads directory is not included (excluding '--uploads' CLI arg)
 if (!$include_uploads){
-	$uploads_dir = shell_exec("wp eval \"echo wp_upload_dir()['basedir'];\"");
+	$uploads_dir = 'web/app/uploads';
 	$excluded_files[] = $uploads_dir;
 }
 
