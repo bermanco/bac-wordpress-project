@@ -15,7 +15,7 @@ $config = json_decode($config_file, true); // Decode to an array
 $install_commands = array(
 	"wp core download",
 	'composer install', // Install Composer dependencies (including required plugins)
-	"cd web/app/themes/{$config['themeDirectoryName']} && npm install", // Install Node dependencies
+	"cd web/app/themes/{$config['themeDirectoryName']} && npm ci", // Install Node dependencies
 	"cd web/app/themes/{$config['themeDirectoryName']} && bower install", // Install Bower dependencies
 	"cd web/app/themes/{$config['themeDirectoryName']} && gulp build", // Build script for front end (JS and CSS)
 	"wp rewrite flush --hard" // Create .htaccess for custom post types, etc.
